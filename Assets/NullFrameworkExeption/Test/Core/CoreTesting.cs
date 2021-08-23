@@ -6,7 +6,7 @@ namespace NullFrameworkException.Test.Core
     {
         public Transform cube;
         
-        private RunnableTest runnableTest;
+        private Optional<RunnableTest> runnableTest = Optional<RunnableTest>.Empty();
         
         // Start is called before the first frame update
         private void Start()
@@ -21,7 +21,7 @@ namespace NullFrameworkException.Test.Core
 
             if(Input.GetKeyDown(KeyCode.A))
             {
-                runnableTest.Enabled = !runnableTest.Enabled;
+                runnableTest.Get().Enabled = !runnableTest.Get().Enabled;
             }
         }
     }
