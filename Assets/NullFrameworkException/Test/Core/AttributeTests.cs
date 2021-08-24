@@ -10,5 +10,7 @@ namespace NullFrameworkException.Test.Core
         [Tag, SerializeField] private string finishTag = "Finish";
 
         [SerializeField, ReadOnly] private string thing = "12346";
+
+        [SerializeField, SceneField] private string testLevel;
     }
 }

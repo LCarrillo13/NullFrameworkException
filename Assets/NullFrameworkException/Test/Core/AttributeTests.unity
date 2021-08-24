@@ -153,7 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Untagged
-  finishTag: EditorOnly
+  finishTag: Finish
+  thing: 12346
+  testLevel: Scenes/SampleScene
 --- !u!4 &763990482
 Transform:
   m_ObjectHideFlags: 0

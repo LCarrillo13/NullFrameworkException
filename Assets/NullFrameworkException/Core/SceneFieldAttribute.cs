@@ -24,5 +24,9 @@ namespace NullFrameworkException
             // Return the newly edited path
             return _path;
         }
+
+        /// <summary> Takes a local folder path and converts it into an asset path. </summary>
+        /// <param name="_path"> The local path. </param>
+        public static string ToAssetPath(string _path) => $"Assets/{_path}.unity";
     }
 }
